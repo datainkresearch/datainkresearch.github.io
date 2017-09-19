@@ -8,8 +8,7 @@
         <br>
         
         <p style="text-align:justify; margin-left:22%; width:56%">
-        Creating whimsical, personal data visualization remains a challenge due to a lack of tools that enable creative visual expression while providing support for binding graphical content to data. Many data analysis and visualization creation tools target the quick generation of visual representations, but lack functionality for graphics design. Toolkits and charting libraries offer more expressive power, but require high programming skill to achieve custom designs. In contrast, sketching affords fluid experimentation with visual shapes and layouts in a free-form manner, but requires to manually draw every single data point. In this work, we aim to bridge the gap between these extremes. We propose data-oriented drawing, an approach leveraging digital sketching and data manipulation to address the difficulties of creating such visualizations, and present DataInk, a prototype implementing this approach. An evaluation with designers and laymen demonstrate the expressive flexibility and power of our approach.
-        </p>
+        Creating whimsical, personal data visualizations remains a challenge due to a lack of tools that enable for creative visual expression while providing support to bind graphical content to data. Many data analysis and visualization creation tools target the quick generation of visual representations, but lack the functionality necessary for graphics design. Toolkits and charting libraries offer more expressive power, but require expert programming skills to achieve custom designs. In contrast, sketching affords fluid experimentation with visual shapes and layouts in a free-form manner, but requires one to manually draw every single data point. In this work, we aim to bridge the gap between these extremes. We propose <i>Data-Oriented Drawing</i>, an approach leveraging digital sketching and data manipulation to address the difficulties inherent in creating such visualizations, and present DataInk, a prototype implementing this approach. An evaluation with designers and laymen demonstrated the expressive flexibility and power of our approach</p>
         <br>
         
         <p style="text-align:justify; margin-left:22%; width:56%">
@@ -19,20 +18,32 @@
         
         <h2>Supplemental Material</h2>
         
-        <a href="">[Paper]</a>
-        <a href="">[Video]</a>
+        <a href="dod.pdf">[Paper]</a>
+        <a href="videos/final_cut.mp4">[Video]</a>
         <a href="#dataink">[DataInk]</a>
         <a href="#examples">[Examples]</a>
-        <a href="#material">[Study material]</a> 
         <a href="#results">[Study results]</a>
      
         <br><br><br>
         <br><br><br>
         <h3>DataInk</h3>
-        <img src="pics/dataInk-nonum.png" width="60%">
-        
+        <img src="pics/dataInk.png" width="60%">
+        <p style="text-align:justify; margin-left:20%; width:60%">DataInk is composed of five UI components. The visualization canvas (a) shows the generated 
+            visual representation of the data, as well as any visual elements 
+            not bound to data such as handwritten text or illustrative marks. 
+            A contextual visual-data palette (b) appears when the authors taps on a visual element, enabling them to set appropriate mappings. 
+            The legend depicting the sets of mapping between visual encodings and data dimensions are grouped in two panels: 
+            one for the glyph (c) and one for the layout (d). A side menu (e) allows an 
+            author access to functionality such as searching vector graphics, loading data, saving the visuals,
+            as well as providing access to several illustration tools. </p>
+
+        <p style="text-align:justify; margin-left:20%; width:60%">DataInk provides the following vocabulary of pen and touch interactions:</p>
+        <img src="pics/vocabulary.png" width="60%">
+
         <div style="text-align:left; margin-left:20%">
-        <br><br><br><br>
+        <br><br>
+        Below is an example workflow:
+        <br><br>
         1) Draw a dog shape,  change its fill color, bind it to its data value:
         <br><br>
         <img src="pics/s1.PNG" width="20%">
@@ -53,26 +64,92 @@
 
         <h3>Examples</h3>
         <a name="examples"></a>
+        <p> Mouse over images to play the videos. 
+            <br>Note that examples were generated on a surface pro 3 and are shown in accelerated speed. </p> 
         
-        <h3>Study</h3>
-        <h4>Material</h4>
-        <a name="material"></a>
-        
-        <h4>Results</h4>
+        <video width="50%" controls onmouseout="this.pause()" onmouseover="this.play()"> 
+            <source src="videos/dogs.mp4"> 
+        </video>
+        <video width="50%" controls onmouseout="this.pause()" onmouseover="this.play()"> 
+            <source src="videos/compliments.mp4"> 
+        </video>
+        <video width="50%" controls onmouseout="this.pause()" onmouseover="this.play()"> 
+            <source src="videos/hearts.mp4"> 
+        </video>
+        <video width="50%" controls onmouseout="this.pause()" onmouseover="this.play()"> 
+            <source src="videos/lys.mp4"> 
+        </video>
+        <video width="50%" controls onmouseout="this.pause()" onmouseover="this.play()"> 
+            <source src="videos/clocks.mp4"> 
+        </video>
+
+        <h3>Study Results</h3>
         <a name="results"></a>
+
+        <p style="text-align:justify; margin-left:20%; width:60%">
+            We conducted a user study to gain insights into the potential of DOD in supporting design expression, rigorous execution 
+            and creative expression, as well as the usability of DataInk for authoring data visualizations. 
+            We targeted designers to understand tradeoffs of DOD compare to graphics design tools, 
+            and invited non-experts (limited experience in programming, data analysis and design) to 
+            assess the receptiveness of DOD by a general audience.
+            <br><br>
+            We ask participants to:<br>
+            1) Replicate an example starting from scratch, <br>
+            2) Iterate on their design to achieve a second example, <br>
+            3) Freeform exploration to create their own data visualization. 
+            <br><br>
+            All managed to complete tasks 1 and 2 successfully. Below are the results of their freform exploration.
+            </p>
 
         <div style="text-align:left; margin-left:20%">
         <br><br><br>
-        Participant 1, designer - dogs dataset
+        Designer 1 - dogs dataset
         <br>
-        <img src="pics/p1-a.svg" width="40%">
-        <img src="pics/p1-b.svg" width="50%">
+        <img src="pics/d1-canvas.svg" width="40%">
+        <img src="pics/d1-panel.svg" width="50%">
         <br><br>
 
-        Participant 2, designer - dogs dataset
+        Designer 2 - dogs dataset
         <br>
-        <img src="pics/p4-a.svg" width="49%">
-        <img src="pics/p4-b.svg" width="50%">
+        <img src="pics/d2-canvas.svg" width="40%">
+        <img src="pics/d2-panel.svg" width="50%">
+        <br><br>
+
+        Designer 3 - xx dataset
+        <br>
+        <img src="pics/d3-canvas.svg" width="40%">
+        <img src="pics/d3-panel.svg" width="50%">
+        <br><br>
+
+        Designer 4 - xx dataset
+        <br>
+        <img src="pics/d4-canvas.svg" width="40%">
+        <img src="pics/d4-panel.svg" width="50%">
+        <br>
+        
+        <br><br>
+        Non-Expert 1 - dogs dataset
+        <br>
+        <img src="pics/p1-canvas.svg" width="40%">
+        <img src="pics/p1-panel.svg" width="50%">
+        <br><br>
+
+        Non-Expert 2 - dogs dataset
+        <br>
+        <img src="pics/p2-canvas.svg" width="40%">
+        <img src="pics/p2-panel.svg" width="50%">
+        <br><br>
+
+        Non-Expert 3 - xx dataset
+        <br>
+        <img src="pics/p3-canvas.svg" width="40%">
+        <img src="pics/p3-panel.svg" width="50%">
+        <br><br>
+
+        Non-Expert 4 - xx dataset
+        <br>
+        <img src="pics/p4-canvas.svg" width="40%">
+        <img src="pics/p4-panel.svg" width="50%">
         <br>
         </div>
     </body>
